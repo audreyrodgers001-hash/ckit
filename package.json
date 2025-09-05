@@ -1,0 +1,25 @@
+{
+  "name": "conten-kit",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "generate": "node ./scripts/generate-content.js",
+    "build": "npm run generate && vite build",
+    "postbuild": "node ./scripts/generate-sitemap.js",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.16.0",
+    "@unhead/vue": "^1.9.16",
+    "markdown-it": "^14.1.0",
+    "unplugin-vue-markdown": "^0.26.2",
+    "vue": "^3.4.31",
+    "vue-router": "^4.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "vite": "^5.3.4"
+  }
+}
